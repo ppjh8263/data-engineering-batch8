@@ -4,7 +4,7 @@ from datetime import datetime
 
 dag = DAG(
     dag_id = 'my_first_dag',
-    start_date = datetime(2021,8,26),
+    start_date = datetime(2022,5,5),
     catchup=False,
     tags=['example'],
     schedule_interval = '0 2 * * *')
