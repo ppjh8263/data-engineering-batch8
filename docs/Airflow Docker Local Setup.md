@@ -26,9 +26,13 @@ Though the image itself has command to download `pipenv` to be used in the conta
 For more information on `pipenv`, please refer to this [page](https://pipenv-fork.readthedocs.io/en/latest/basics.html).
 
 ### Spinning Up Local Airflow Services
-1. Download this repo and cd into the main folder (cd data-engineering-batchN)
-2. Run `docker-compose up`
-3. Go to a web browser and enter address `http://localhost:8080/`. You should see an Aiflow login page:
+1. Download this repo and cd into the main folder (cd data-engineering-batchN). Change N in batchN accordingly
+```
+git clone https://github.com/keeyong/data-engineering-batchN.git
+cd data-engineering-batchN
+```
+3. Run `docker-compose up`
+4. Go to a web browser and enter address `http://localhost:8080/`. You should see an Aiflow login page:
 ![Local Airflow Login Page](./images/airflow_login.png)
 4. Login with
     * username: `airflow`
