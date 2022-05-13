@@ -57,7 +57,7 @@ def load(**context):
 
 dag_second_assignment = DAG(
     dag_id = 'second_assignment_v3',
-    start_date = datetime(2021,11,27), # 날짜가 미래인 경우 실행이 안됨
+    start_date = datetime(2022,5,12), # 날짜가 미래인 경우 실행이 안됨
     schedule_interval = '0 2 * * *',  # 적당히 조절
     catchup = False,
     max_active_runs = 1,
