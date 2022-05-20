@@ -13,9 +13,11 @@ import psycopg2
 
 
 
-def get_Redshift_connection():
+def get_Redshift_connection(autocommit=False):
     hook = PostgresHook(postgres_conn_id='redshift_dev_db')
-    return hook.get_conn().cursor()
+    conn = hook.get_conn()
+    conn.autocommit = autocommit
+    return conn.cursor()
 
 
 def extract(**context):
