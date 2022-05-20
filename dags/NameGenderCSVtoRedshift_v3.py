@@ -41,8 +41,6 @@ def load(**context):
     
     cur = get_Redshift_connection()
     lines = context["task_instance"].xcom_pull(key="return_value", task_ids="transform")
-    lines = iter(lines)
-    next(lines)
     sql = "BEGIN; DELETE FROM {schema}.{table};".format(schema=schema, table=table)
     for line in lines:
         if line != "":
