@@ -19,8 +19,9 @@ sudo apt-get install -y libmysqlclient-dev
 sudo pip3 install numpy
 sudo pip3 install pandas
 sudo pip3 install apache-airflow==2.1.4
-sudo pip3 install apache-airflow-providers-postgres[amazon]
-sudo pip3 install apache-airflow-providers-mysql[amazon]
+sudo pip3 install apache-airflow-providers-postgres
+sudo pip3 install apache-airflow-providers-mysql
+sudo pip3 install apache-airflow-providers-amazon==2.1.0
 sudo pip3 install SQLAlchemy==1.3.23
 sudo pip3 install oauthclient
 sudo pip3 install gspread
