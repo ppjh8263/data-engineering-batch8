@@ -18,12 +18,14 @@ sudo apt-get install -y postgresql-server-dev-all
 sudo apt-get install -y libmysqlclient-dev
 sudo pip3 install numpy
 sudo pip3 install pandas
-sudo pip3 install apache-airflow==2.1.4
-sudo pip3 install apache-airflow-providers-postgres
-sudo pip3 install apache-airflow-providers-mysql
-sudo pip3 install apache-airflow-providers-amazon==2.1.0
+sudo pip3 install apache-airflow==2.2.5
+sudo pip3 install apache-airflow-providers-postgres==2.2.0
+sudo pip3 install apache-airflow-providers-mysql==2.2.0
+sudo pip3 install apache-airflow-providers-amazon==2.2.0
+sudo pip3 install apache.airflow.providers.slack
+sudo pip3 install apache.airflow.providers.google
 sudo pip3 install SQLAlchemy==1.3.23
-sudo pip3 install oauthclient
+sudo pip3 install oauth2client
 sudo pip3 install gspread
 sudo pip3 install typing_extensions
 ```
