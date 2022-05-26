@@ -21,7 +21,7 @@ sudo pip3 install pandas
 sudo pip3 install apache-airflow==2.2.5
 sudo pip3 install apache-airflow-providers-postgres==2.2.0
 sudo pip3 install apache-airflow-providers-mysql==2.2.0
-sudo pip3 install apache-airflow-providers-amazon==2.2.0
+sudo pip3 install apache-airflow-providers-amazon==2.3.0
 sudo pip3 install apache.airflow.providers.slack
 sudo pip3 install apache.airflow.providers.google
 sudo pip3 install SQLAlchemy==1.3.23
