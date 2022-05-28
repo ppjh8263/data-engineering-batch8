@@ -34,10 +34,10 @@ def execSQL(**context):
     sql += select_sql
     cur.execute(sql)
 
-    cur.execute("SELECT COUNT(1) FROM {schema}.temp_{table}""".format(schema=schema, table=table))
+    cur.execute(f"""SELECT COUNT(1) FROM {schema}.temp_{table}""")
     count = cur.fetchone()[0]
     if count == 0:
-        raise ValueError("{schema}.{table} didn't have any record".format(schema=schema, table=table))
+        raise ValueError(f"{schema}.{table} didn't have any record")
 
     try:
         sql = f"""DROP TABLE IF EXISTS {schema}.{table};ALTER TABLE {schema}.temp_{table} RENAME to {table};"""

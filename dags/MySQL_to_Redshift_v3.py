@@ -28,7 +28,7 @@ dag = DAG(
 schema = "keeyong"
 table = "nps"
 s3_bucket = "grepp-data-engineering"
-s3_key = schema + "-" + table
+s3_key = schema + "-" + table       # s3_key = schema + "/" + table
 
 s3_folder_cleanup = S3DeleteObjectsOperator(
     task_id = 's3_folder_cleanup',
